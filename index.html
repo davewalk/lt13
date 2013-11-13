@@ -136,13 +136,13 @@
                         var hoods = require('philly-hoods');
 
                         hoods.findByCoords(39.948495, -75.144504, function (err, res) {
-                            if (err) console.log(err);
+                            if (err) return err;
 
                             console.log(res);
                         });
 
                         hoods.findByName('old', function (err, res) {
-                            if (err) console.log(err);
+                            if (err) return err;
 
                             console.log(res);
                         });
